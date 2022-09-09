@@ -1,0 +1,65 @@
+import Image from 'next/image'
+
+# Other Coursework
+
+## Hack Reactor
+
+Built with [React](https://reactjs.org/). A discovery app for local restaurant information and reviews, modeled after Yelp. 
+
+The project was an exercise in component design within a larger [microservices architecture](http://microservices.io/).
+I personally built the [Restaurant Details](https://github.com/hrsf93-welp/welp-restaurant-details) component, a service provided to a parent restaurant page. The service implements a RESTful API on the backend to retrieve data from a MongoDB database.
+
+**It contains 4 major sub-components:**
+1. **Summary** component that displays hours today, price and a menu link
+2. **Hours** component that renders based off of the time the site is viewed
+3. **Menu** component that is clickable with item photos and descriptions
+4. **Details** component that displays more information about the restaurant
+
+---
+Here's the full page on [Youtube](https://www.youtube.com/embed/iRxMxa_h2MU).
+
+*Technologies: JavaScript, React, HTML/CSS/Sass, Node.js, Express, Redis, MongoDB, Jest/Enzyme, Webpack, Docker, AWS EC2, Google Maps API, moment.js*
+
+
+**Related Projects**
+* [`https://github.com/hrsf93-welp/welp-restaurant-details`](https://github.com/hrsf93-welp/welp-restaurant-details)
+* [`https://github.com/hrsf93-welp/welp-restaurant-summary`](https://github.com/hrsf93-welp/welp-restaurant-summary)
+* [`https://github.com/hrsf93-welp/welp-photo-gallery`](https://github.com/hrsf93-welp/welp-photo-gallery)
+* [`https://github.com/hrsf93-welp/welp-review`](https://github.com/hrsf93-welp/welp-review)
+
+## Harvard University Extension
+For this project we analyzed data from the [World Bank logistics performance index](https://lpi.worldbank.org/).
+
+The primary questions we wanted to answer were:
+* What's a given countries ability to trade?
+* With other countries? 
+* Within region? 
+* What direction is the country moving?
+
+<Image src="/wheres-my-widget.png" alt="Where's My Widget?" width={800} height={500} />
+Link to the project on [Github](http://harvard-team-pivot.github.io/cs171project/).
+
+----
+**The primary steps we took were**:
+1. Brainstorming and sketching ideas as a group
+2. Storyboarding and eliciting feedback
+3. Data cleaning
+4. Implementation
+5. Cleanup and next steps
+
+More about our process on [Github](https://github.com/harvard-team-pivot/cs171project).
+
+---
+*Notes on Data Cleaning Process and Implementation:*
+
+Data was exported from excel as csv. There was one file exported for each year. Headers were multi-line. Edited csv to reflect accurate column headers. Second csv header set updated since data changed from 2007-2010. The data change was not due to collection of new information, but the addition of summary data.
+
+Consolidated data, as working with four datasets didn't make much sense. The 2007 dataset was missing some summary data that needed to be imputed. While reviewing the data in the chrome javascript console, I also identified a discrepancy year over year in the number of records.
+
+Added them all to a single dataset for the time being. Pushed to github with the allData array available for prototyping. Added each dataset to allData array.
+
+1. **Added bar chart**: Sorted it by highest score to lowest. Made it grey per expert evaluation feedback. Added it to bootstrap container.
+2. **Added radar chart** from [here](http://bl.ocks.org/nbremer/21746a9668ffdf6d8242): Tweaking data to work with it. I got the axes in there own variable. Able to filter the axes, need to let the function accept scope or rank.
+3. **Added choropleth map** modeled after [here](https://bl.ocks.org/mbostock/4060606). Added the ability to filter by metric, and set us up for the ability to filter by year (currently set to 2014).
+
+## Georgia Tech, Analytics MicroMasters
