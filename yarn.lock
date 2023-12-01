@@ -112,6 +112,11 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.0.tgz#d27e7e76c87a460a4da99c5bfdb1618dcd6cd064"
   integrity sha512-aBvcbMwuanDH4EMrL2TthNJy+4nP59Bimn8egqv6GHMVj0a44cU6Au4PjOhLNqEh9l+IpRGBqMTzec94UdC5xg==
 
+"@nfte/react@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@nfte/react/-/react-1.0.4.tgz#b584cc6640e3d650609bf1a49bf53c569c0996c4"
+  integrity sha512-qLgAdWGvAKi2miwb8CaYszOuLoWZnGcTt3xrnLgiOQwScvNS5zcwMs4pr32VLGN5gotPBNR7b2GHbaqYjL0S8g==
+
 "@reach/skip-nav@^0.11.2":
   version "0.11.2"
   resolved "https://registry.yarnpkg.com/@reach/skip-nav/-/skip-nav-0.11.2.tgz#015498b2125ad8ef1e48cb8ab33dca93925fcbc8"
