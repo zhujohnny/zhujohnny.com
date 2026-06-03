@@ -1,0 +1,5 @@
+export default {
+  'uc-berkeley': 'UC Berkeley',
+  'uc-san-diego': 'UC San Diego',
+  'other-coursework': 'Other Coursework',
+}

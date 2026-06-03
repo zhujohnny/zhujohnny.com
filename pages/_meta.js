@@ -1,0 +1,8 @@
+export default {
+  index: 'About',
+  'work-experience': 'Work Experience',
+  education: 'Education',
+  gaming: 'Gaming',
+  cycling: 'Cycling',
+  tea: 'Tea',
+}
